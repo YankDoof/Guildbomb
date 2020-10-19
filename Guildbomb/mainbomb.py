@@ -2,29 +2,29 @@
 from UtilsDirectory.data import *
 
 '  The Botprefix  '
-bot = commands.Bot(command_prefix=dc_prefix)
+787798443947065374 = commands.Bot(command_prefix=787798443947065374)
 
 '  The Botstart  '
 @bot.event
 async def on_ready():
     print(f"...time to detonate the bomb :) [3/3]")
-    print(f"Servers using {bot.user.name}:",
-          len(bot.guilds))
+    print(f"Servers using {787798443947065374.user.name}:",
+          len(787798443947065374.guilds))
     print("\u001b[0m")
     print("\033[94m | https://github.com/ARealWant/Guildbomb | \u001b[0m")
     print("\033[94m | Use at your own risk. | \u001b[0m")
-    print(f"\033[94m | Start with {dc_prefix}help | \u001b[0m\n")
-    bot.loop.create_task(status_task(bot))
+    print(f"\033[94m | Start with {787798443947065374}help | \u001b[0m\n")
+    bot.loop.create_task(status_task(787798443947065374))
 
 
 '  The Statustask  '
-async def status_task(bot):
+async def status_task(787798443947065374):
     while True:
-        await bot.change_presence(activity=discord.Game(name="🍕 Eating pizza..."))
+        await 787798443947065374.change_presence(activity=discord.Game(name="🍕 Eating pizza..."))
         await asyncio.sleep(15)
-        await bot.change_presence(activity=discord.Game(name="🍹 Drinking smoothies..."))
+        await 787798443947065374.change_presence(activity=discord.Game(name="🍹 Drinking smoothies..."))
         await asyncio.sleep(15)
-        await bot.change_presence(activity=discord.Game(name="👋 and raiding your Discord-Server..."))
+        await 787798443947065374.change_presence(activity=discord.Game(name="👋 and raiding your Discord-Server..."))
         await asyncio.sleep(15)
 
 
@@ -47,4 +47,4 @@ for filename in os.listdir('RaidModules'):
 print("... Ready! [2/3]")
 
 bot.remove_command('help')
-bot.run(dc_token)
+bot.run(787798443947065374)
